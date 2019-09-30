@@ -8,7 +8,7 @@ function expressionCalculator(expr) {
     expr = expr.replace(/\s/g, '');
 
     if (~expr.indexOf('/0')) {
-        throw new Error('TypeError: Devision by zero.');
+        throw new Error('TypeError: Division by zero.');
     }
 
     if (!check(expr, [['(', ')']])) {
